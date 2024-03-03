@@ -21,7 +21,17 @@ function sendMessage() {
 socket.on('receiveMessage', (data) => {
     // Display received message in the chat with username
     const chatMessages = document.getElementById('chat-messages');
-    chatMessages.innerHTML += `<div><strong>${data.username}:</strong> ${data.message}</div>`;
+    const messageDiv = document.createElement('div');
+    const messageContent = `<div><strong>${data.username}:</strong> ${data.message}</div>`;
+    
+    if (data.username === username) {
+        messageDiv.classList.add('sent-message');
+    } else {
+        messageDiv.classList.add('received-message');
+    }
+
+    messageDiv.innerHTML = messageContent;
+    chatMessages.appendChild(messageDiv);
 });
 
 // Function to prompt for username
