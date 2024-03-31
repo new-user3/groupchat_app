@@ -20,7 +20,7 @@ Welcome to the Group Chat Application! This application allows users to join cha
 
 To get started with the Group Chat Application, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/groupchat_app.git`
+1. Clone the repository: `git clone https://github.com/new-user3/groupchat_app.git`
 2. Install dependencies: `cd groupchat_app && npm install`
 3. Start the backend server: `npm start`
 4. Open the frontend in your web browser: [http://localhost:3000](http://localhost:3000)
